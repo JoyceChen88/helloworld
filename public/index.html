@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>cy-web</title>
+    <link href="<%= BASE_URL %>js/vant/index.css" rel="stylesheet">
+    <script>
+        (function() {
+            var u = navigator && navigator.userAgent
+            if(u && (u.indexOf('Mobi') > -1 || u.indexOf('iPh') > -1 || u.indexOf('480') > -1 ||  u.indexOf('Tablet') > -1 || u.indexOf('Pad') > -1 || u.indexOf('Nexus 7') > -1)) {
+            } else {
+                document.write('<script src="<%= BASE_URL %>js/touch-simulator/touch-simulator.js"><\/script>')
+            }
+        })()
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but vant-demo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <script src="<%= BASE_URL %>js/wx/jweixin-1.4.0.js"></script>
+    <script src="<%= BASE_URL %>js/vue/vue.min.js"></script>
+    <script src="<%= BASE_URL %>js/vuex/vuex.min.js"></script>
+    <script src="<%= BASE_URL %>js/vue-router/vue-router.min.js"></script>
+    <script src="<%= BASE_URL %>js/axios/axios.min.js"></script>
+    <script src="<%= BASE_URL %>js/vant/index.js"></script>
+    <script src="<%= BASE_URL %>js/jquery/jquery.min.js"></script>
+    <script src="<%= BASE_URL %>js/lodash/lodash.min.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=f9adf9f2a3fa74fd0778975ae6d890ae"></script>
+    <script type="text/javascript" src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
